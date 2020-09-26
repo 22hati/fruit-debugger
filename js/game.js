@@ -106,13 +106,13 @@ class Game{
                      if(fruitGroup.isTouching(player1)) {
                         player.score+1
                         player.update();
-                        fruits.destroy();
+                        fruitGroup.destroyEach();
                      }
 
                      if(fruitGroup.isTouching(player2)) {
                         player.score+1
                         player.update();
-                        fruits.destroy();
+                        fruitGroup.destroyEach();
                      }
                   }
     }
